@@ -4,6 +4,7 @@ type: software
 title: "Medicinal-plant reliability evaluation: code and frozen-output companion"
 version: 1.0.0
 date-released: '2026-09-07'
+doi: "10.5281/zenodo.22640948"
 url: "https://github.com/mzw423502/medplant-reliability-evaluation"
 repository-code: "https://github.com/mzw423502/medplant-reliability-evaluation"
 license: MIT

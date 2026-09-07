@@ -6,7 +6,16 @@ Repository: https://github.com/mzw423502/medplant-reliability-evaluation
 
 ## Version and citation
 
-This is the v1.0.0 software/source-and-output companion, prepared on 2026-09-07. Use the tagged release archive `medplant-reliability-evaluation-v1.0.0.zip`, not the earlier candidate ZIP. Citation metadata are supplied in `CITATION.cff`. An archival DOI is not asserted in these files until an external record has actually been published.
+This is the v1.0.0 software/source-and-output companion, released on 2026-09-07. Use the tagged release archive `medplant-reliability-evaluation-v1.0.0.zip`, not the earlier candidate ZIP. Citation metadata are supplied in `CITATION.cff`.
+
+- **Version-specific DOI:** https://doi.org/10.5281/zenodo.22640948
+- **Fixed release:** https://github.com/mzw423502/medplant-reliability-evaluation/releases/tag/v1.0.0
+- **Archived source commit:** `2d728e3f50882e8d33ddf0b561be67abb2d7139e`
+- All-versions DOI: https://doi.org/10.5281/zenodo.22640947 (resolves to the latest version; cite the version-specific DOI above for this release).
+
+Zenodo preserves a GitHub repository snapshot. Within that snapshot, extract `medplant-reliability-evaluation-v1.0.0.zip` to obtain the code companion. The inner ZIP is identical to the GitHub release asset (SHA-256 `72cf681920a6c7dd3e725e3ac1d5283454bd72713ba0eae1729e9865ecfa3547`). The outer Zenodo snapshot has a different checksum by design.
+
+The DOI links were added to the default-branch documentation after successful archiving; the v1.0.0 tag and release ZIP have not been changed.
 
 ## Contents
 
