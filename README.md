@@ -1,33 +1,38 @@
-# Medicinal-plant reliability evaluation
+# Medicinal-plant reliability evaluation — v1.0.0
 
 Code and frozen-output companion for **Beyond Internal Accuracy: Cross-Source Generalization and Open-Set Reliability in Medicinal-Plant Image Classification**.
 
-## Current status
+Repository: https://github.com/mzw423502/medplant-reliability-evaluation
 
-Private staging repository for the Paper 002 code-release candidate. This repository is not yet a public archival release, has no DOI, and must not be cited as publicly accessible code until the publication step is complete.
+## Version and citation
 
-## Download and inspect
+This is the v1.0.0 software/source-and-output companion, prepared on 2026-09-07. Use the tagged release archive `medplant-reliability-evaluation-v1.0.0.zip`, not the earlier candidate ZIP. Citation metadata are supplied in `CITATION.cff`. An archival DOI is not asserted in these files until an external record has actually been published.
 
-Download `Paper002_Code_Release_Candidate.zip` and extract it into a new folder. The archive contains auditing, group/split, evaluation and statistical scripts, historical plotting source, formal training source and configurations, baseline frozen predictions and environment reports, and supplementary result tables including the strong-augmentation extension.
+## Contents
 
-The ZIP SHA-256 is:
+- Source code for provenance/duplicate audits, group/split construction, evaluation, statistics and historical figure generation.
+- Formal ResNet-50 / ViT-B/16 training source and frozen baseline/strong-augmentation configurations.
+- Frozen baseline predictions and run/environment reports; supplementary tables including the mitigation extension.
+- The strong-augmentation open-set implementation under its original relative directory.
 
-`daa5cff91fb7928b76e964eda4b538bd67d13b23e545ceb65a26fac50544d307`
+## Safe verification
 
-From the extracted folder, run:
+Extract the release ZIP into a new directory. From its top-level folder run:
 
 ```console
 python verify_package.py
 ```
 
-This checks the packaged file hashes and Python syntax only. It does not execute the scientific scripts or train a model. Read the included README and dependency record before using the source files.
+This verifies packaged file hashes and parses Python syntax using the standard library. It does not import or execute the scientific scripts, train a model, download images, run inference, select thresholds or change any scientific result. See `DEPENDENCIES.json` for statically detected imports and `environment/` for original training-host records.
 
-## Scope and access
+## Reproduction scope
 
-The compact companion supports code inspection and inspection of existing frozen outputs. Some historical scripts require inputs and directory layouts from the full research project; this is not a tested one-command reconstruction of all experiments. Trained checkpoints, original image pixels, private manuscript files and caches are excluded. Self-collected images remain available on reasonable request to the corresponding author, independently of code access.
+The archive supports source inspection and offline inspection of existing frozen outputs. Some historical scripts expect input manifests, score files, image data and directories from the full research project which are not all included at their original paths. It is not a one-command reconstruction of the complete training/evaluation pipeline. Do not execute all scripts in bulk: some construct splits or launch training. The original environment records are provenance, not a tested installation lock for a new machine.
 
-The package preserves the distinction between primary ResNet-50 / ViT-B/16 experiments and the historical ResNet-18 feature baseline. No new experiment results are introduced by this upload.
+`scripts/run_formal_end_to_end.py` is the ResNet-50 / ViT-B/16 primary implementation. `scripts/run_formal_frozen_feature_baseline.py` is a historical ResNet-18 auxiliary baseline, not the primary experiment. Historical plotting scripts do not certify pixel-exact regeneration of every assembled final figure.
 
-## Release preparation
+Available recovered checkpoints do not consistently reproduce all formal frozen predictions and are excluded. This release adds no new inference, matched-source experiment or scientific result.
 
-A software licence and archival release metadata are still to be finalized before public distribution. No blanket software licence is granted over third-party datasets or bundled derived data. The archived candidate's README records the state at package assembly; this repository README records the subsequent private-upload stage.
+## Licence and data access
+
+Original software is released under MIT; see `LICENSE` and `NOTICE.md` for scope. Third-party data are not relicensed. Original image pixels, checkpoints, private manuscript files, credentials and caches are excluded. Self-collected images remain available on reasonable request to the corresponding author.

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this versioned code and frozen-output companion when using it."
+type: software
+title: "Medicinal-plant reliability evaluation: code and frozen-output companion"
+version: 1.0.0
+date-released: '2026-09-07'
+url: "https://github.com/mzw423502/medplant-reliability-evaluation"
+repository-code: "https://github.com/mzw423502/medplant-reliability-evaluation"
+license: MIT
+authors:
+  - family-names: Ma
+    given-names: Zhongwu
+  - family-names: Niu
+    given-names: Zimeng
+  - family-names: Zhao
+    given-names: Gaohu
+  - family-names: Lin
+    given-names: Yijun
+  - family-names: He
+    given-names: Chao
+  - family-names: Li
+    given-names: Xianen
+  - family-names: Chen
+    given-names: Caixia
